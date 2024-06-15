@@ -7,7 +7,7 @@ const productApi=require('../apis/productApis')
 //fetch all records
 router.get('/fetch',productApi.products_all)
 router.post('/insert',productApi.insert_product)
-router.delete('/delete',productApi.delete_product)
+router.delete('/delete/:p_id',productApi.delete_product)
 router.put('/update',productApi.update_product)
 
 //export router
